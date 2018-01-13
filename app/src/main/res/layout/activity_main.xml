@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.example.mohamed.stopwatch.MainActivity">
+<RelativeLayout
+        style="@style/Main">
+    <TextView
+        android:id="@+id/time_view"
+        style="@style/Attributes"
+        android:text="Hello World!"
+        android:layout_alignParentTop="true"/>
+    <Button
+        android:id="@+id/start_button"
+        style="@style/Attributes"
+        android:text="@string/start"
+        android:layout_below="@id/time_view"
+        android:onClick="onClickStart"/>
+    <Button
+        android:id="@+id/stop_button"
+        style="@style/Attributes"
+        android:text="@string/stop"
+        android:layout_below="@id/start_button"
+        android:onClick="onClickStop"/>
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/Attributes"
+        android:text="@string/reset"
+        android:layout_below="@id/stop_button"
+        android:onClick="onClickReset"/>
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
